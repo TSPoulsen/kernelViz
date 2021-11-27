@@ -1,10 +1,8 @@
 import torch 
 import torch.nn as nn
+from .baseModel import BaseModel
 
-class SimpleCNN(nn.Module):
+class simpleCNN(BaseModel):
+
     def __init__(self):
-        super(SimpleCNN, self).__init__()
-        pass
-    
-    def forward(self, x:torch.Tensor):
-        pass
+        super().__init__()
