@@ -2,6 +2,7 @@
 # Custom Ignores
 **/*log.txt
 .vscode/
+data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
