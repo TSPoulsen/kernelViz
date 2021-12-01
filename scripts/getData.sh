@@ -4,7 +4,7 @@
 # More info can be found here: https://github.com/fastai/imagenette
 set -e # exit script upon failure
 
-#wget https://s3.amazonaws.com/fast-ai-imageclas/imagenette2.tgz 
+wget https://s3.amazonaws.com/fast-ai-imageclas/imagewoof2-320.tgz 
 file_path=$(realpath $0)
 data_path=$file_path/../data
 echo data_path

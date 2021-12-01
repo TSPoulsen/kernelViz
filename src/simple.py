@@ -10,10 +10,13 @@ def run():
     logger: logging.Logger = logging.getLogger("simpleRunner")
 
     imagenette_train: Dataset = ImagenetteDataset()
-    imagenette_val:   Dataset = ImagenetteDataset(validation = True)
+    #imagenette_val:   Dataset = ImagenetteDataset(validation = True)
     train_loader: DataLoader = DataLoader(imagenette_train, batch_size = 64, shuffle=True)
-    val_loader:   DataLoader = DataLoader(imagenette_val)
+    #val_loader:   DataLoader = DataLoader(imagenette_val)
 
+    for batch in iter(train_loader):
+        print(batch)
+        break
 
 
 
